@@ -4,7 +4,7 @@ Hi there.
 
 thanks to see my smal and fun (maybe dirty) project.
 
-`pam_sqlite3` is a open source pam module for authenticate services using sqlite3.
+`pam_sqlite3` is an open source pam module for authenticate services using sqlite3.
 
 ### compiled and test on
 
