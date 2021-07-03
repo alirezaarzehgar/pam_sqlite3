@@ -8,7 +8,7 @@ endif()
 
 if(${CMAKE_SYSTEM_NAME} MATCHES "FreeBSD")    
     include_directories(/usr/local/include)
-endif() 
+endif()
 
 set(CMAKE_C_FLAGS 
     "${CMAKE_C_FLAGS} -lsqlite3 -lpam -lpam_misc")
