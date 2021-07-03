@@ -18,7 +18,9 @@ thanks to see my smal and fun (maybe dirty) project.
 
 # Installation
 
-`$ git clone https://github.com/alirezaarzehgar/pam_sqlite3.git`
+```
+$ git clone https://github.com/alirezaarzehgar/pam_sqlite3.git
+```
 
 when you cloned this repository on your computer, you can change config.h.in.
 
