@@ -1,6 +1,6 @@
 # pam_sqlite3
 
-Hi dear.
+Hi there.
 
 thanks to see my smal and fun (maybe dirty) project.
 
