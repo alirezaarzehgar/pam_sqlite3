@@ -75,18 +75,6 @@ PAM_EXTERN int pam_sm_authenticate(pam_handle_t *pamh, int flags, int argc, cons
     const char *excepted_password = sqlite_query_get_password(username);
     const char *md5_password = md5_create(password);
 
-    puts("username : ");
-    puts(username);
-
-    puts("database pass : ");
-    puts(excepted_password);
-
-    puts("entred pass : ");
-    puts(password);
-
-    puts("user pass : ");
-    puts(md5_password);
-
     if (strcmp(excepted_password, md5_password) == 0)
     {
         return PAM_SUCCESS;
