@@ -11,7 +11,7 @@ if(${CMAKE_SYSTEM_NAME} MATCHES "FreeBSD")
 endif()
 
 set(CMAKE_C_FLAGS 
-    "${CMAKE_C_FLAGS} -lsqlite3 -lpam -lpam_misc")
+    "${CMAKE_C_FLAGS} -lsqlite3 -lpam")
 
 set(LIBS
     src/md5.c
