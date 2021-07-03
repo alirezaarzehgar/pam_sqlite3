@@ -7,7 +7,7 @@ if(${CMAKE_SYSTEM_NAME} MATCHES "Linux")
 endif()
 
 if(${CMAKE_SYSTEM_NAME} MATCHES "FreeBSD")    
-    include_directories(/usr/local/include)
+    include_directories(/usr/local/include /usr/include)
 endif()
 
 set(CMAKE_C_FLAGS 
