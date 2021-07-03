@@ -2,15 +2,13 @@ cmake_minimum_required(VERSION 3.2)
 
 project(pam_sqlite3)
 
-if(LINUX)
+if(${CMAKE_SYSTEM_NAME} MATCHES "Linux")
     include_directories(/usr/include)
-endif(LINUX)
+endif()
 
-if(FreeBSD)
+if(${CMAKE_SYSTEM_NAME} MATCHES "FreeBSD")    
     include_directories(/usr/local/include)
-endif(FreeBSD)
-
-
+endif() 
 
 set(CMAKE_C_FLAGS 
     "${CMAKE_C_FLAGS} -lsqlite3 -lpam -lpam_misc")
