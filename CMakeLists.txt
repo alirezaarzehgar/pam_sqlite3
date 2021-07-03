@@ -4,14 +4,15 @@ project(pam_sqlite3)
 
 if(${CMAKE_SYSTEM_NAME} MATCHES "Linux")
     include_directories(/usr/include)
+
+    set(CMAKE_C_FLAGS 
+        "${CMAKE_C_FLAGS} -lsqlite3 -lpam")
 endif()
 
 if(${CMAKE_SYSTEM_NAME} MATCHES "FreeBSD")    
     include_directories(/usr/local/include /usr/include)
 endif()
 
-set(CMAKE_C_FLAGS 
-    "${CMAKE_C_FLAGS} -lsqlite3 -lpam")
 
 set(LIBS
     src/md5.c
