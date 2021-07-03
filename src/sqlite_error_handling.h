@@ -15,7 +15,7 @@
 #include <sqlite3.h>
 
 /**
- * @brief sqlite_report helper micro 
+ * @brief sqlite_report helper macro 
  * @param db database handler for getting error messages
  * @param msg custom error message for alert
  * @param retval returned error code
@@ -24,7 +24,7 @@
 #define R(db, retval, msg, callback) ({ sqlite_report(db, retval, msg, callback); })
 
 /**
- * @brief R micro helper micro
+ * @brief R macro helper macro
  * 
  * @param db database handler for getting error messages
  * @param retval returned error code

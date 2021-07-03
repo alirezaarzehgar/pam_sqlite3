@@ -42,7 +42,7 @@ $ git clone https://github.com/alirezaarzehgar/pam_sqlite3.git
 
 when you cloned this repository on your computer, you can change config.h.in.
 
-this file contain `DB_PATH` micro for reading data.
+this file contain `DB_PATH` macro for reading data.
 
 ```
 #define DB_PATH "/path/mydbpath.db"
