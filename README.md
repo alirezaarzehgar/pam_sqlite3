@@ -1,4 +1,4 @@
-# pam_sqlites
+# pam_sqlite3
 
 Hi dear.
 
