@@ -16,6 +16,24 @@ thanks to see my smal and fun (maybe dirty) project.
 - libsqlite3
 - PAM headers
 
+## dependency installation
+
+### manjaro
+
+already supported manjaro.
+
+### centos8
+
+centos support comming soon
+
+```
+# dnf install cmake libarchive gcc gcc-c++ libsqlite3-dev libsqlite3x-devel pam-devel
+```
+
+### FreeBSD
+
+FreeBSD support comming soon
+
 # Installation
 
 ```
