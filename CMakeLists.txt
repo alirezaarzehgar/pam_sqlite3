@@ -16,18 +16,11 @@ set(SOURCES
     src/pam_sqlite3.c
 )
 
-set(TEST_SOURCES
-    ${LIBS}
-    test/md5_test.c
-)
-
 add_library(pam_sqlite3 SHARED
     ${SOURCES}
 )
 
 install(TARGETS pam_sqlite3
     LIBRARY DESTINATION /lib/security)
-
-add_executable(unit_tests ${TEST_SOURCES})
 
 configure_file(config.h.in ../src/config.h)
