@@ -203,12 +203,14 @@ char *str2md5(uint8_t *digest)
  * @param initial_msg simple text
  * @return char* 
  */
-char *MD5(const uint8_t *initial_msg)
+char *md5_create(const uint8_t *initial_msg)
 {
     size_t len = strlen(initial_msg);
     uint8_t result[16];
 
     md5(initial_msg, len, result);
+
+    printf("here is str2md5:\n");
 
     return str2md5(result);
 }

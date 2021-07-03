@@ -68,7 +68,7 @@ char *str2md5(
  * @param initial_msg simple text
  * @return char* 
  */
-char *MD5(
+char *md5_create(
     const uint8_t *initial_msg /* simple text */
 );
 

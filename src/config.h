@@ -12,6 +12,6 @@
 #if !defined(_CONFIG_H)
 #define _CONFIG_H
 
-#define DB_PATH "/opt/pam_sqlite3/shadow.db"
+#define DB_PATH "/var/db/sshd/shadoe.db"
 
 #endif // _CONFIG_H
