@@ -15,6 +15,8 @@
 #include <security/pam_modules.h>
 #include <security/pam_ext.h>
 
+#include "sqlite_query.h"
+
 #include "md5.h"
 
 /**
@@ -70,7 +72,12 @@ PAM_EXTERN int pam_sm_authenticate(pam_handle_t *pamh, int flags, int argc, cons
 
     pam_get_authtok(pamh, PAM_AUTHTOK, &password, NULL);
 
-    puts(MD5(password));
+    const char *excepted_password = sqlite_query_get_password(username);
 
-    return PAM_SUCCESS;
+    if (strcmp(excepted_password, MD5(password)) == 0)
+    {
+        return PAM_SUCCESS;
+    }
+
+    return PAM_AUTH_ERR;
 }
