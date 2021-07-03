@@ -12,9 +12,10 @@
 #if !defined(_SQLITE_QUERY_H)
 #define _SQLITE_QUERY_H
 
-static struct sqlite_query
+typedef struct sqlite_query
 {
     char *username;
+    char *password;
 } sqlite_query_t;
 
 char *sqlite_query_get_password(const char *username);
