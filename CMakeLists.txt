@@ -18,6 +18,7 @@ set(LIBS
     src/md5.c
     src/sqlite_error_handling.c
     src/sqlite_query.c
+    src/pam_get_password.c
 )
 
 set(SOURCES
