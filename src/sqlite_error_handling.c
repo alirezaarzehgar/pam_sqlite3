@@ -33,14 +33,9 @@ void sqlite_report(sqlite3 *db, int retval, const char *msg, void (*callback)())
     if (retval != SQLITE_OK)
     {
         fprintf(stderr, "%s%s%s\n",
-                msg == NULL        /* if msg does not exists function will not print ": " string */
-                    ? ""           /* when msg does exists */
-                    : msg,         /* when msg does not exists */
-                msg == NULL        /* if msg does not exists function will not print ": " string */
-                    ? ""           /* when msg does exists */
-                    : ": ",        /* when msg does not exists */
-                sqlite3_errmsg(db) /* sqlite error message */
-        );
+                msg == NULL ? "" : msg,
+                msg == NULL ? "" : ": ",
+                sqlite3_errmsg(db));
 
         exit(EXIT_FAILURE);
     }
