@@ -2,7 +2,7 @@
 
 Hi there.
 
-thanks to see my smal and fun (maybe dirty) project.
+thanks to see my small and fun (maybe dirty) project.
 
 `pam_sqlite3` is an open source pam module for authenticate services using sqlite3.
 
@@ -24,7 +24,7 @@ already supported manjaro.
 
 ### centos8
 
-centos support comming soon
+centos support coming soon
 
 ```
 # dnf install cmake libarchive gcc gcc-c++ libsqlite3-dev libsqlite3x-devel pam-devel
@@ -49,7 +49,7 @@ this file contain `DB_PATH` macro for reading data.
 ```
 
 it's better this path choses from standard locations like `/var/db/service`, `/root/.config/pam_sqlite3`, `/etc/service` and etc.
-this path by default located on `/var/db/sshd/shadoe.db`.
+this path by default located on `/var/db/sshd/shadow.db`.
 
 please make sure your custom location subdir is already exists.
 
@@ -78,8 +78,8 @@ this is for me :
 then you should initialize you db.
 
 ```
-# sqlite3 /var/db/sshd/shadoe.db
-sqlite> CREATE TABLE users (id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, username STRING, password STRING);
+# sqlite3 /var/db/sshd/shadow.db
+sqlite> CREATE TABLE users (id INTEGER NOT NULL PRIMARY KEY AUTO_INCREMENT, username STRING, password STRING);
 ```
 
 then you can enter a user.
