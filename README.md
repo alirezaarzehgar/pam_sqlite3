@@ -61,10 +61,10 @@ $ cmake --build .
 # make install
 ```
 
-## Database initialization
+## Database Initialization
 
-i doe's not implemented sqlite3 front ent for user CRUD yet.
-but hopefully i'll be add this part.
+I have not yet implemented sqlite3 front-ent for user CRUD.
+But I hope to add this part
 
 however you should initialize your database manually.
 
