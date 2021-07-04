@@ -19,7 +19,7 @@
  * @param db database handler for getting error messages
  * @param msg custom error message for alert
  * @param retval returned error code
- * @param callback custom function callback for extra fcuntionality
+ * @param callback custom function callback for extra functionality
  */
 #define R(db, retval, msg, callback) ({ sqlite_report(db, retval, msg, callback); })
 
@@ -38,13 +38,13 @@
  * @param db database handler for getting error messages
  * @param retval returned error code
  * @param msg custom error message for alert
- * @param callback custom function callback for extra fcuntionality
+ * @param callback custom function callback for extra functionality
  */
 void sqlite_report(
     sqlite3 *db,       /* database handler for getting error messages */
     int retval,        /* returned error code */
     const char *msg,   /* custom error message for alert */
-    void (*callback)() /* custom function callback for extra fcuntionality */
+    void (*callback)() /* custom function callback for extra functionality */
 );
 
 #endif // _SQLITE_ERROR_HANDLING_H
