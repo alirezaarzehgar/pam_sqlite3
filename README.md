@@ -69,6 +69,7 @@ But I hope to add this part
 however you should initialize your database manually.
 
 first of all you should create your database directory.
+
 this is for me :
 
 ```
