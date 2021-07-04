@@ -1,7 +1,7 @@
 /**
  * @file md5.h
  * @author your name (you@domain.com)
- * @brief 
+ * @brief this header file collects definations for the md5 hashing
  * @version 0.1
  * @date 2021-07-03
  * 
