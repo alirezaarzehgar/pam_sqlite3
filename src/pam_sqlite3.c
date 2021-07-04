@@ -27,7 +27,7 @@
 #define PASSWORD_PROMPT "Password: "
 
 /**
- * @brief set credentioal
+ * @brief set credential
  * 
  * @param pamh pam handler
  * @param flags pam flags

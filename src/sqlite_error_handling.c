@@ -20,7 +20,7 @@
  * @param db database handler for getting error messages
  * @param retval returned error code
  * @param msg custom error message for alert
- * @param callback custom function callback for extra fcuntionality
+ * @param callback custom function callback for extra functionality
  */
 void sqlite_report(sqlite3 *db, int retval, const char *msg, void (*callback)())
 {

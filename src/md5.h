@@ -48,7 +48,7 @@ uint32_t to_int32(
  */
 void md5(
     const uint8_t *initial_msg, /* text argument for converting to md5 hash */
-    size_t initial_len,         /* text lenght */
+    size_t initial_len,         /* text length */
     uint8_t *digest             /* md5 result */
 );
 
